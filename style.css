@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(26, 26, 26);
+    align-items: center;
+    width: 100%;
+    overflow-y: hidden;
+    
+
+}
+
+.content{
+    display: flex;
+    width: 90%;
+    margin-top: 25px;
+    flex: 1;
+    border-radius: 5px;
+    flex-direction: column;
+    
+}
+
+.content-inicio{
+    display: flex;
+    width: 90%;
+    margin-top: 25px;
+    flex: 1;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center
+    
+}
+
+.card{
+    background-color: rgb(37, 37, 37);
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.542) 10px 10px 10px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 22%;
+    width:100%;
+    
+}
+
+#card-mes-destinos{
+    background-color: rgb(37, 37, 37);
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.542) 10px 10px 10px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 22%;
+    width:100%;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+@media (min-width: 750px) {
+
+    .card{
+        height: 40%;
+        max-width: 48%;
+    }
+    #card-mes-destinos{
+        height: 40%;
+        max-width: 48%;
+    }
+
+    .content-inicio{
+        
+        justify-content: space-between;
+        
+    }
+    
+    
+}
+
+.head-card{
+    width: 25%;
+    background-color: cornflowerblue;
+    color: black;
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-card{
+
+    background-color:black;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+
+
+}
+
+.info-card{
+    font-size: 1.2rem;
+    height: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 54, 54);
+    font-weight: bolder;
+    color: white;
+}
+.dia{
+    background-color: rgb(49, 49, 49);
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    color: rgb(53, 53, 53);
+    box-shadow: rgba(0, 0, 0, 0.487) 5px 9px 10px ;
+    
+}
+
+
+.info-card-destinos{
+    color: black;
+    font-weight: bolder
+    ,;
+    background-color: #6495ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30%;
+    width: 31.7%;
+    height: 47%;
+}
+
+.name-dia{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: cornflowerblue;
+}
+.complete-data{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.header{
+   
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.btn-nav{
+    padding: 15px;
+    width: 30%;
+    min-width: 85px;
+    height: 60px;
+    border: none;
+    background-color: rgb(56, 56, 56);
+    border-radius: 4px;
+    font-weight: bolder;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.563) 5px 9px 10px ;
+    color: cornflowerblue;
+    font-size: 1.1rem;
+    
+    
+    
+}
+.btn-nav:hover{
+    background-color: rgb(227, 228, 226);
+}
+
+#hoje{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+.entregas-div{
+     background-color: rgb(140, 139, 139);
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: absolute;
+    bottom: 90px;
+    top: 0px;
+}
+
+.entregas{
+    background-color: rgb(140, 139, 139);
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0px;
+    top:50px
+    
+}
+.entregas-info{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: absolute;
+    font-size: 1.5rem;
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+.entrega{
+    font-size: 1.3rem;
+    color:white;
+    background-color: rgb(26, 26, 26);
+    margin: 5px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    min-height: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-entrega{
+
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    height: 100%;
+    font-size: 1.3rem;
+}
+
+.excluir{
+    background-color: cornflowerblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    padding: 0 10px;
+    transition: ease 1s;
+    transform: translateX(100%);
+}
+
+
+
+.new{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 1000;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.309) 0px 0px 10px;
+    position: absolute;
+    bottom: 20px;
+
+
+
+}
+.new:hover{
+    background-color: rgb(85, 197, 85);
+    color: white;
+
+}
+
+
+
+.excluir:hover{
+    background-color: rgb(247, 89, 89);
+}
+::-webkit-scrollbar{
+    width: 10px;
+    
+}
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+   
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(57, 131, 243, 0.378);
+    border-radius: 10px;
+}
+
+
+.aba-destino{
+    box-shadow: rgba(0, 0, 0, 0.309) -10px -10px 10px;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 60%;
+    background-color: rgb(29, 29, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
+    transform: translateY(100%);
+    color: white;
+
+}
+
+.div-destinos{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden ;
+    
+
+}
+.content-destino{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    padding-top: 20px;
+    height: 80%;
+
+}
+
+.destino{
+    background-color: cornflowerblue;
+    padding: 5px;
+    margin: 5px 0px;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    color:black;
+
+}
+
+.destino:active{
+    background-color: black;
+    color: white;
+}
+
+.tollbar-destino{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.btn-exit-destinos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(36, 36, 36);
+    font-weight: bolder;
+    font-size: larger;
+    color: cornflowerblue
+}
+

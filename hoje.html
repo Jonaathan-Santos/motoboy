@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoje</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/index.min.js"></script>
+</head>
+<body onload="renderHoje()">
+
+    <div class="app">
+
+        <header class="header">
+            <br>
+            <div class="dia">
+                <span class="name-dia">Sabado</span>
+                <span class="complete-data">09 - Dezembro - 2021</span>
+
+            </div>
+            
+        </header>
+        <nav class="nav">
+            
+            <a href="index.html" class="btn-nav">
+                Inicio
+
+            </a>
+            <a href="hoje.html" class="btn-nav" >
+                Hoje
+
+            </a>
+            <a href="#" class="btn-nav" >  
+
+                consultas
+            </a>
+            
+        </nav>
+        <div id="hoje">
+            
+
+            <div class="entregas-div">
+
+                <div class="entregas-info">
+                    <span id="corridas-hj-hj"></span>
+                </div>
+                <div class="entregas" onclick="ativeBtnExcluir(event)">
+                   
+                   
+                </div>
+            </div>
+            
+            
+            
+            <div class="new" onclick="renderAbaDestinos()">
+                add
+            </div>
+            
+            
+        </div>
+        <div class="aba-destino" id="aba-destinos" onclick="addDestino(event)">
+               
+            <div class="div-destinos">
+                <div class="tollbar-destino">
+                    <div class="btn-exit-destinos">Fechar</div>
+                </div>
+                <div class="content-destino">
+                    <div class="destino" id="sitio" data-valor="3">Sitio do Gama</div>
+                    <div class="destino" id="stanorte" data-valor="5">Sta Norte</div>
+                    <div class="destino" id="totalville" data-valor="5">   Total Ville</div>
+                    <div class="destino" id="stasul" data-valor="7">Sta Sul</div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <script src="app.js"></script>
+
+    
+</body>
+</html>

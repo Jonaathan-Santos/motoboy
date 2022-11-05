@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle motoboy</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#6495ed">
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/index.min.js"></script>
+</head>
+<body onload="renderInicio()">
+    <div class="app">
+
+        <header class="header">
+            <span>CONTROLE DE ENTREGAS</span>
+            
+            <div class="dia">
+                <span class="name-dia">Sabado</span>
+                <span class="complete-data">09 - Dezembro - 2021</span>
+
+            </div>
+            
+        </header>
+        <nav class="nav">
+            
+            <a href="index.html" class="btn-nav">
+                Inicio
+
+            </a>
+            <a href="hoje.html" class="btn-nav" >
+                Hoje
+
+            </a>
+            <a href="#" class="btn-nav" >  
+
+                consultas
+            </a>
+            
+        </nav>
+        <section class="content-inicio">
+            <div class="card" id="card-mes-destinos">
+                
+                
+            </div>
+            <div class="card" id="card-hj">
+                <div class="head-card">HOJE</div>
+                <div class="content-card">
+                    <div class="info-card corridas-hj">
+                        0 Corridas
+                    </div>
+                    <div class="info-card saldo-hj">
+                        00,00R$
+                    </div>
+                    <div class="info-card total-hj">
+                        Total: 00,00R$
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card-mes">
+                <div class="head-card">SEM</div>
+                <div class="content-card">
+                    <div class="info-card" id="corridas-semana">
+                        0 Corridas
+                    </div>
+                    <div class="info-card" id="saldo-semana">
+                        00,00R$
+                    </div>
+                    <div class="info-card total-semana">
+                        Total: 00,00R$
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card-mes">
+                <div class="head-card">MES</div>
+                <div class="content-card">
+                    <div class="info-card" id="corridas-mes">
+                        0 Corridas
+                    </div>
+                    <div class="info-card" id="saldo-mes">
+                        00,00R$
+                    </div>
+                    <div class="info-card total-mes">
+                        Total: 00,00R$
+                    </div>
+                </div>
+            </div>
+           
+            
+        </section>
+       
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
